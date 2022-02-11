@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mhss.app.androidassessment.CanvasView
+        android:id="@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainGroupContainer"
+        android:layout_width="278dp"
+        android:layout_height="44dp"
+        app:cardBackgroundColor="@color/buttonGroupBackgroundColor"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="41dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/mainButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedButton="@id/drawButton"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/drawButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/pen_ic"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/arrowButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/arrow_ic"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rectangleButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/rectangle_ic"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/circleButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ellipse_ic"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/colorsButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/palette_ic"
+                />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/colorGroupContainer"
+        android:layout_width="166dp"
+        android:layout_height="44dp"
+        app:cardBackgroundColor="@color/buttonGroupBackgroundColor"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/mainGroupContainer"
+        app:layout_constraintEnd_toEndOf="@id/mainGroupContainer"
+        >
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/colorButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedButton="@id/blackButton"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/redButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/color_item"
+                app:iconTint="#FB0008"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/greenButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/color_item"
+                app:iconTint="#007F00"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/blueButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/color_item"
+                app:iconTint="#0078DE"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/blackButton"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/color_item"
+                app:iconTint="@color/black"
+                app:iconGravity="textEnd"
+                />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

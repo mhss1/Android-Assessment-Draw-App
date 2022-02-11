@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/arrow_ic.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/divider.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/ic_ellipse_ic.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/palette_ic.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/pen_ic.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/pen_ic_checked.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/pen_item.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/drawable/red_color_item.xml" value="0.11" />
+        <entry key="..\:/Users/Mohamed/AndroidStudioProjects/Androidassessment/app/src/main/res/layout/activity_main.xml" value="0.2758169934640523" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
